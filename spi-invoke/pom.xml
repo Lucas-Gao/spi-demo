@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spi-demo</artifactId>
+        <groupId>com.github.lucas</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spi-invoke</artifactId>
+
+    <properties>
+        <spi-interface.version>1.0-SNAPSHOT</spi-interface.version>
+        <spi-implement.version>1.0-SNAPSHOT</spi-implement.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.lucas</groupId>
+            <artifactId>spi-interface</artifactId>
+            <version>${spi-interface.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.lucas</groupId>
+            <artifactId>spi-implement</artifactId>
+            <version>${spi-implement.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
